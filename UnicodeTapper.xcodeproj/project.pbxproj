@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A97ADFF115C5124700DC83EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97ADFF015C5124700DC83EC /* UIKit.framework */; };
+		A97ADFF315C5124700DC83EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97ADFF215C5124700DC83EC /* Foundation.framework */; };
+		A97ADFF515C5124700DC83EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97ADFF415C5124700DC83EC /* CoreGraphics.framework */; };
+		A97ADFFB15C5124800DC83EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A97ADFF915C5124800DC83EC /* InfoPlist.strings */; };
+		A97ADFFD15C5124800DC83EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A97ADFFC15C5124800DC83EC /* main.m */; };
+		A97AE00115C5124800DC83EC /* UnicodeTapperAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A97AE00015C5124800DC83EC /* UnicodeTapperAppDelegate.m */; };
+		A97AE00415C5124800DC83EC /* UnicodeTapperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97AE00315C5124800DC83EC /* UnicodeTapperViewController.m */; };
+		A97AE00715C5124800DC83EC /* UnicodeTapperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A97AE00515C5124800DC83EC /* UnicodeTapperViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A97ADFEC15C5124700DC83EC /* UnicodeTapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicodeTapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97ADFF015C5124700DC83EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A97ADFF215C5124700DC83EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A97ADFF415C5124700DC83EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A97ADFF815C5124800DC83EC /* UnicodeTapper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnicodeTapper-Info.plist"; sourceTree = "<group>"; };
+		A97ADFFA15C5124800DC83EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A97ADFFC15C5124800DC83EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A97ADFFE15C5124800DC83EC /* UnicodeTapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnicodeTapper-Prefix.pch"; sourceTree = "<group>"; };
+		A97ADFFF15C5124800DC83EC /* UnicodeTapperAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnicodeTapperAppDelegate.h; sourceTree = "<group>"; };
+		A97AE00015C5124800DC83EC /* UnicodeTapperAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnicodeTapperAppDelegate.m; sourceTree = "<group>"; };
+		A97AE00215C5124800DC83EC /* UnicodeTapperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnicodeTapperViewController.h; sourceTree = "<group>"; };
+		A97AE00315C5124800DC83EC /* UnicodeTapperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnicodeTapperViewController.m; sourceTree = "<group>"; };
+		A97AE00615C5124800DC83EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UnicodeTapperViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A97ADFE915C5124700DC83EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97ADFF115C5124700DC83EC /* UIKit.framework in Frameworks */,
+				A97ADFF315C5124700DC83EC /* Foundation.framework in Frameworks */,
+				A97ADFF515C5124700DC83EC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A97ADFE115C5124700DC83EC = {
+			isa = PBXGroup;
+			children = (
+				A97ADFF615C5124700DC83EC /* UnicodeTapper */,
+				A97ADFEF15C5124700DC83EC /* Frameworks */,
+				A97ADFED15C5124700DC83EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A97ADFED15C5124700DC83EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A97ADFEC15C5124700DC83EC /* UnicodeTapper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A97ADFEF15C5124700DC83EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A97ADFF015C5124700DC83EC /* UIKit.framework */,
+				A97ADFF215C5124700DC83EC /* Foundation.framework */,
+				A97ADFF415C5124700DC83EC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A97ADFF615C5124700DC83EC /* UnicodeTapper */ = {
+			isa = PBXGroup;
+			children = (
+				A97ADFFF15C5124800DC83EC /* UnicodeTapperAppDelegate.h */,
+				A97AE00015C5124800DC83EC /* UnicodeTapperAppDelegate.m */,
+				A97AE00215C5124800DC83EC /* UnicodeTapperViewController.h */,
+				A97AE00315C5124800DC83EC /* UnicodeTapperViewController.m */,
+				A97AE00515C5124800DC83EC /* UnicodeTapperViewController.xib */,
+				A97ADFF715C5124800DC83EC /* Supporting Files */,
+			);
+			path = UnicodeTapper;
+			sourceTree = "<group>";
+		};
+		A97ADFF715C5124800DC83EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A97ADFF815C5124800DC83EC /* UnicodeTapper-Info.plist */,
+				A97ADFF915C5124800DC83EC /* InfoPlist.strings */,
+				A97ADFFC15C5124800DC83EC /* main.m */,
+				A97ADFFE15C5124800DC83EC /* UnicodeTapper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A97ADFEB15C5124700DC83EC /* UnicodeTapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97AE00A15C5124800DC83EC /* Build configuration list for PBXNativeTarget "UnicodeTapper" */;
+			buildPhases = (
+				A97ADFE815C5124700DC83EC /* Sources */,
+				A97ADFE915C5124700DC83EC /* Frameworks */,
+				A97ADFEA15C5124700DC83EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnicodeTapper;
+			productName = UnicodeTapper;
+			productReference = A97ADFEC15C5124700DC83EC /* UnicodeTapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A97ADFE315C5124700DC83EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UnicodeTapper;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A97ADFE615C5124700DC83EC /* Build configuration list for PBXProject "UnicodeTapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A97ADFE115C5124700DC83EC;
+			productRefGroup = A97ADFED15C5124700DC83EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A97ADFEB15C5124700DC83EC /* UnicodeTapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A97ADFEA15C5124700DC83EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97ADFFB15C5124800DC83EC /* InfoPlist.strings in Resources */,
+				A97AE00715C5124800DC83EC /* UnicodeTapperViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A97ADFE815C5124700DC83EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97ADFFD15C5124800DC83EC /* main.m in Sources */,
+				A97AE00115C5124800DC83EC /* UnicodeTapperAppDelegate.m in Sources */,
+				A97AE00415C5124800DC83EC /* UnicodeTapperViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A97ADFF915C5124800DC83EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97ADFFA15C5124800DC83EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A97AE00515C5124800DC83EC /* UnicodeTapperViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97AE00615C5124800DC83EC /* en */,
+			);
+			name = UnicodeTapperViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A97AE00815C5124800DC83EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A97AE00915C5124800DC83EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A97AE00B15C5124800DC83EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnicodeTapper/UnicodeTapper-Prefix.pch";
+				INFOPLIST_FILE = "UnicodeTapper/UnicodeTapper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "";
+				"VALID_ARCHS[sdk=*]" = "armv6 armv7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A97AE00C15C5124800DC83EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnicodeTapper/UnicodeTapper-Prefix.pch";
+				INFOPLIST_FILE = "UnicodeTapper/UnicodeTapper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "";
+				"VALID_ARCHS[sdk=*]" = "armv6 armv7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A97ADFE615C5124700DC83EC /* Build configuration list for PBXProject "UnicodeTapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97AE00815C5124800DC83EC /* Debug */,
+				A97AE00915C5124800DC83EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97AE00A15C5124800DC83EC /* Build configuration list for PBXNativeTarget "UnicodeTapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97AE00B15C5124800DC83EC /* Debug */,
+				A97AE00C15C5124800DC83EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A97ADFE315C5124700DC83EC /* Project object */;
+}
