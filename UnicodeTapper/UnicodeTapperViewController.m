@@ -27,12 +27,19 @@
         _currentCodePoint = 0x20;
     }
     
-    // Set accessibility identifiers for the UILabels in order to find them in UIAutomation easily:
-    // (one can't do this in IB yet, as of Xcode 4.3.3)
+    // If device supports it, set accessibility identifiers for the UILabels
+    // in order to find them in UIAutomation easily.  Note that the
+    // accessibilityIdentifier can't be set in IB yet, as of Xcode 4.3.3;
+    // also, it's only supported in iOS 5 and up.
     topBarLabel.isAccessibilityElement = YES;
-    topBarLabel.accessibilityIdentifier = @"topBarLabel";
     bigCharLabel.isAccessibilityElement = YES;
-    bigCharLabel.accessibilityIdentifier = @"bigCharLabel";
+    if ([topBarLabel respondsToSelector:@selector(accessibilityIdentifier)]) {
+        topBarLabel.accessibilityIdentifier = @"topBarLabel";
+        bigCharLabel.accessibilityIdentifier = @"bigCharLabel";
+    } else {
+        topBarLabel.accessibilityLabel = @"topBarLabel";
+        bigCharLabel.accessibilityLabel = @"bigCharLabel";        
+    }
 
     // Display starting code point to user
     [self displayNextCharacter:self];
@@ -56,6 +63,7 @@
     [bigCharLabel release];
     [super dealloc];
 }
+
 - (IBAction)displayNextCharacter:(id)sender {
     // increment code point
     _currentCodePoint++;
@@ -70,9 +78,8 @@
     self.bigCharLabel.accessibilityValue = codePointString;
     
     // Display the code point's number in the top bar
-    NSString *topBarString = [[NSString alloc] initWithFormat:@"Unicode code point: U+%04x", _currentCodePoint];
+    NSString *topBarString = [NSString stringWithFormat:@"Unicode code point: U+%04x", _currentCodePoint];
     self.topBarLabel.text = topBarString;
     self.topBarLabel.accessibilityValue = topBarString;
-    
 }
 @end
